@@ -8,7 +8,7 @@ const Task = (props) => {
     >
       {/* {todo.id} */}
       <h2>{props.taskName}</h2>
-      <button onClick={() => props.todocomplete(props.id)}>Complete</button>
+      {/* <button onClick={() => props.todocomplete(props.id)}>Complete</button> */}
       <button onClick={() => props.deleteTask(props.id)}>x</button>
     </div>
   );
