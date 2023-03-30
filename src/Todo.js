@@ -19,6 +19,7 @@ function Todo() {
     const task = {
       id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
       taskName: taskBaru,
+      completed: false,
     };
 
     const newTodoList = [...todoList, task];
@@ -35,6 +36,18 @@ function Todo() {
     });
     setTodoList(newTodoList);
   };
+
+  //   const completedTask = (id) => {
+  //     setTodoList(
+  //       todoList.map((todo) => {
+  //         if (todo.id === id) {
+  //           return { ...todo, completed: true };
+  //         } else {
+  //           return todo;
+  //         }
+  //       })
+  //     );
+  //   };
 
   return (
     <div className="App">
@@ -58,6 +71,7 @@ function Todo() {
                 taskName={todo.taskName}
                 id={todo.id}
                 deleteTask={deletetodo}
+                // todocomplete={completedTask}
               />
             </div>
           );
