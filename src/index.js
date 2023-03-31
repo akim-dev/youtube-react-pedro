@@ -6,6 +6,7 @@ import App1 from "./App1";
 import { Fetch } from "./Fetch";
 // import Todo from "./Todo";
 import Life from "./Life";
+import Medsos from "./Medsos";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     {/* <App1 /> */}
     {/* <Todo /> */}
     {/* <Life /> */}
-    <Fetch />
+    {/* <Fetch /> */}
+    <Medsos />
   </div>
 );
